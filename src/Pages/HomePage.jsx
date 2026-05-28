@@ -4,6 +4,8 @@ import Header from "../Components/Header"
 function HomePage(){
   return (
       <>
+      <title>Ecommerce Project</title>
+    <link rel="icon" type="image/svg+xml" href="/images/ecommerce.png" />
     <Header />
     <div className="home-page">
       <div className="products-grid">

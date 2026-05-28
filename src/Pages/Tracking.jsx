@@ -4,6 +4,7 @@ import Header from '../Components/Header'
 function Tracking(){
   return (
     <>
+    <title>Tracking</title>
     <Header />
 
     <div className="tracking-page">
