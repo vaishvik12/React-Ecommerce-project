@@ -5,7 +5,7 @@ function Checkout(){
   return(
     <>
     <title>Checkout</title>
-    <link rel = "icon" type = "image/svg+xml" href = "images/cart-favicon.png" />
+    <link rel = "icon" type = "image/svg+xml" to = "images/cart-favicon.png" />
     <CheckoutHeader />
     <div className="checkout-page">
       <div className="page-title">Review your order</div>
