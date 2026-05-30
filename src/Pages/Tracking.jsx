@@ -3,15 +3,17 @@ import {Link} from "react-router"
 import Header from '../Components/Header'
 import { PrefetchPageLinks } from 'react-router';
 
-function Tracking(){
+function Tracking({cart}){
   return (
     <>
     <title>Tracking</title>
-    <Header />
+    <Header
+    cart = {cart}
+    />
 
     <div className="tracking-page">
       <div className="order-tracking">
-        <Link className="back-to-orders-link link-primary" to="orders">
+        <Link className="back-to-orders-link link-primary" to="/orders">
           View all orders
         </Link>
 

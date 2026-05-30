@@ -1,13 +1,16 @@
 import Header from "../Components/Header"
 import './orders.css'
-import {Link} from "react-router"
-function Orders(){
+import {NavLink} from "react-router"
+function Orders({cart, calculateCartQuantity}){
   return (
     <>
     <title>Orders</title>
-    <link rel = "icon" type = "image/svg+xml" to = "images/orders-favicon.png" />
+    <navlink rel = "icon" type = "image/svg+xml" to = "images/orders-favicon.png" />
 
-    <Header />
+    <Header 
+    cart = {cart}
+    calculateCartQuantity = {calculateCartQuantity}
+    />
     <div className="orders-page">
       <div className="page-title">Your Orders</div>
 
@@ -54,11 +57,11 @@ function Orders(){
             </div>
 
             <div className="product-actions">
-              <Link to="tracking">
+              <NavLink to="/tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </Link>
+              </NavLink>
             </div>
 
             <div className="product-image-container">
@@ -82,11 +85,11 @@ function Orders(){
             </div>
 
             <div className="product-actions">
-              <Link to="tracking">
+              <NavLink to="/tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>
@@ -133,11 +136,11 @@ function Orders(){
             </div>
 
             <div className="product-actions">
-              <Link to="tracking">
+              <NavLink to="/tracking">
                 <button className="track-package-button button-secondary">
                   Track package
                 </button>
-              </Link>
+              </NavLink>
             </div>
           </div>
         </div>
